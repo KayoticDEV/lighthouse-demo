@@ -10,7 +10,7 @@ module.exports = {
         assert: {
             preset: 'lighthouse:recommended',
             assertions: {
-                'categories:accessibility': ['error', {aggregationMethod: 'optimistic', minScore: 0.40}],
+                'categories:accessibility': ['error', {aggregationMethod: 'optimistic', minScore: 0.90}],
                 'categories:performance': ['warn', {aggregationMethod: 'optimistic', minScore: 0.40}],
                 'categories:best-practices': ['error', {aggregationMethod: 'optimistic', minScore: 0.65}],
                 'categories:seo': ['error', {aggregationMethod: 'optimistic', minScore: 0.60}],
