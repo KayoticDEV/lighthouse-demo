@@ -8,12 +8,12 @@ module.exports = {
             numberOfRuns: 1
         },
         assert: {
-            preset: 'lighthouse:recommended',
+            preset: 'lighthouse:no-pwa',
             assertions: {
-                'categories:accessibility': ['error', {aggregationMethod: 'optimistic', minScore: 0.90}],
-                'categories:performance': ['warn', {aggregationMethod: 'optimistic', minScore: 0.40}],
-                'categories:best-practices': ['error', {aggregationMethod: 'optimistic', minScore: 0.65}],
-                'categories:seo': ['error', {aggregationMethod: 'optimistic', minScore: 0.60}],
+                'categories:accessibility': ['error', {minScore: 0.75}],
+                'categories:performance': ['error', {aggregationMethod: 'optimistic', minScore: 0.95}],
+                'categories:best-practices': ['error', {aggregationMethod: 'optimistic', minScore: 0.90}],
+                'categories:seo': ['error', {aggregationMethod: 'optimistic', minScore: 0.90}],
                 'apple-touch-icon': 'off',
                 'color-contrast': 'off',
                 'installable-manifest': 'off',
